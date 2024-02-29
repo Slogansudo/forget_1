@@ -63,21 +63,35 @@ class LinkedList:
                 self.head = last.next
 
 
-
 a = Node(1)
 b = Node(3)
 c = Node(8)
 d = Node(7)
 e = Node(20)
+f = Node(100)
 linked = LinkedList()
 linked.head = a
 a.next = b
 b.next = c
 c.next = d
 d.next = e
+e.next = f
 linked.print_list()
-print("remove")
+
+print("push")
+linked.push(50)
+linked.print_list()
+
+print("append")
 linked.append(39)
+linked.print_list()
+
+print("insert")
+linked.insert(b, 34)
+linked.print_list()
+
+print("remove")
+linked.remove(d)
 linked.print_list()
 
 """data = list(range(10))
